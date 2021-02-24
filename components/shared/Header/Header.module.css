@@ -1,0 +1,74 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100vw;
+  padding: 10px 32px;
+  color: var(--text-on-dark2);
+  background: var(--bg-dark2);
+}
+
+.logo {
+  font-size: 24px;
+  color: var(--text-on-dark2);
+}
+
+.logo svg {
+  margin-right: 5px;
+}
+
+.login {
+  color: var(--text-on-dark2);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.login:hover,
+.login:focus {
+  color: var(--text-highlight);
+}
+
+.loginPopup {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+
+  padding: 15px 20px;
+
+  background: var(--bg-dark2);
+}
+
+.loginPopup:before {
+  position: absolute;
+  top: -30px;
+  right: 40px;
+  content: "";
+  height: 10px;
+  width: 1px;
+  border-color: transparent transparent var(--bg-dark2) transparent;
+  border-style: solid;
+  border-width: 10px;
+}
+
+.loginPopupInput {
+  border: 1px solid #aaa;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.loginBtn {
+  display: flex;
+  justify-content: center;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-on-blue);
+  background: var(--bg-blue);
+  padding: 5px;
+}

@@ -1,0 +1,98 @@
+:root {
+  --bg-primary: #fff;
+  --text-primary: #000;
+
+  --bg-dark1: #121212;
+  --text-on-dark1: #fff;
+
+  --bg-dark2: #272727;
+  --text-on-dark2: #fff;
+
+  --bg-black: #000;
+  --text-on-black: #fff;
+
+  --bg-silver: #eee;
+  --text-on-silver: #000;
+
+  --bg-teal: #41c6c3;
+  --text-on-teal: #000;
+
+  --bg-blue: #2d46b9;
+  --text-on-blue: #fff;
+
+  --bg-orange: #ff4632;
+  --text-on-orange: #eee;
+
+  --bg-purple: #cb1582;
+  --text-on-purple: #000;
+
+  --bg-azure: #a5ffef;
+  --text-on-azure: #cb1582;
+
+  --text-black: #000;
+  --text-white: #fff;
+  --text-orange: #ff4632;
+  --text-blue: #2d46b9;
+  --text-purple: #cb1582;
+  --text-azure: #a5ffef;
+  --text-red: red;
+  --text-grey: #222;
+  --text-highlight: #41c6c3;
+
+  --body-text-size: 12px;
+  --body-line-height: 16px;
+  --title-text-size: 14px;
+  --title-line-height: 18px;
+
+  --header-height: 60px;
+  --footer-height: 80px;
+  --viewport-padding: 32px;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --viewport-padding: 16px;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Crimson+Text", sans-serif;
+  color: var(--text-primary);
+  line-height: var(--body-line-height);
+  font-size: var(--body-text-size);
+  font-weight: 500;
+  min-height: 100vh;
+  background: var(--bg-primary);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+input {
+  color: var(--text-primary);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  display: flex;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: var(--text-primary);
+}

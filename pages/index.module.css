@@ -1,0 +1,15 @@
+.postContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.postLink {
+  font-size: 18px;
+  color: var(--text-primary);
+  margin: 10px;
+}
+
+.postLink:hover,
+.postLink:focus {
+  color: var(--text-blue);
+}
